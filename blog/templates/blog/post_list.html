@@ -1,25 +1,20 @@
 <html>
-<head>
-    <title>H-draogn's blog</title>
-</head>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">WTF</a></h1>
+        </div>
 
-<body>
-<div>
-    <h1><a href="">H-draogn's blog</a></h1>
-</div>
-
-
-    <div>
-        <h1><a href="/">H-dragon's Blog</a></h1>
-    </div>
-
-    {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-    {% endfor %}
-
-</body>
+        <div>
+            {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                 <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
 </html>
